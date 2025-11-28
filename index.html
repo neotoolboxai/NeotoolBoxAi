@@ -1,11 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>NeoToolBoxAI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 1. TITLE CHANGED -->
+    <title>NeoToolBoxAI</title>
+
+    <!-- 2. SEO & SOCIAL MEDIA TAGS -->
+    <link rel="canonical" href="https://YOUR-WEBSITE-LINK-HERE">
+    <meta property="og:url" content="https://YOUR-WEBSITE-LINK-HERE">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="NeoToolBoxAI">
+    <meta property="og:description" content="Top AI Tools Directory: Chatbots, Image Generators, and Video Tools curated for professionals.">
+    <!-- Place 'banner.jpg' in the assets folder if you have one -->
+    <meta property="og:image" content="https://YOUR-WEBSITE-LINK-HERE/assets/banner.jpg">
+    <meta name="description" content="Curated directory of top AI tools: chatbots, image generators, and image-to-video creators. Direct access with professional design for efficiency.">
+    
+    <!-- 3. MONETAG VERIFICATION TAG -->
+    <meta name="monetag" content="PASTE-YOUR-MONETAG-VERIFICATION-CODE-HERE">
+    
+    <!-- External Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Linked CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1>NeoToolBoxAI</h1>
-<p>Your AI tools will load here.</p>
+    <header>
+        <h1><i class="fas fa-robot"></i> NeoToolBoxAI</h1>
+        <p>Compact directory of essential AI tools. Direct links to chatbots, image generators, and image-to-video – optimized for quick access on any device.</p>
+    </header>
+    
+    <div class="container">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search tools...">
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-comments"></i> AI Chatbots</h2>
+                <p>Intelligent assistants for queries and tasks.</p>
+            </div>
+            <div class="ai-grid" id="chatGrid">
+                <!-- Chat Cards -->
+                <div class="ai-card" data-tags="chat gpt"><i class="fas fa-user"></i><a href="https://chat.openai.com/" target="_blank">ChatGPT</a><p class="description">Versatile queries.</p></div>
+                <div class="ai-card" data-tags="chat grok"><i class="fas fa-rocket"></i><a href="https://grok.x.ai/" target="_blank">Grok AI</a><p class="description">Truth-seeking AI.</p></div>
+                <div class="ai-card" data-tags="chat deepseek"><i class="fas fa-searchengin"></i><a href="https://chat.deepseek.com/" target="_blank">DeepSeek</a><p class="description">Coding specialist.</p></div>
+                <div class="ai-card" data-tags="chat claude"><i class="fas fa-book"></i><a href="https://claude.ai/" target="_blank">Claude AI</a><p class="description">Helpful convos.</p></div>
+                <div class="ai-card" data-tags="chat gemini"><i class="fas fa-gem"></i><a href="https://gemini.google.com/" target="_blank">Gemini</a><p class="description">Multimodal assist.</p></div>
+                <div class="ai-card" data-tags="chat copilot"><i class="fas fa-code"></i><a href="https://copilot.microsoft.com/" target="_blank">Microsoft Copilot</a><p class="description">Productivity AI.</p></div>
+                <div class="ai-card" data-tags="chat perplexity"><i class="fas fa-question-circle"></i><a href="https://www.perplexity.ai/" target="_blank">Perplexity AI</a><p class="description">Search engine AI.</p></div>
+                <div class="ai-card" data-tags="chat meta"><i class="fas fa-users"></i><a href="https://www.meta.ai/" target="_blank">Meta AI</a><p class="description">Social creativity.</p></div>
+                <div class="ai-card" data-tags="chat pi"><i class="fas fa-heart"></i><a href="https://pi.ai/" target="_blank">Pi AI</a><p class="description">Empathetic companion.</p></div>
+                <div class="ai-card" data-tags="chat you"><i class="fas fa-globe"></i><a href="https://you.com/" target="_blank">You.com AI</a><p class="description">Personalized search.</p></div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-image"></i> AI Image Generators</h2>
+                <p>Create stunning visuals from text prompts.</p>
+            </div>
+            <div class="ai-grid" id="imageGrid">
+                <!-- Image Cards -->
+                <div class="ai-card" data-tags="image dall-e"><i class="fas fa-brain"></i><a href="https://chat.openai.com/" target="_blank">DALL-E 3</a><p class="description">OpenAI text-to-image.</p></div>
+                <div class="ai-card" data-tags="image midjourney"><i class="fas fa-star"></i><a href="https://www.midjourney.com/" target="_blank">Midjourney</a><p class="description">Artistic generations.</p></div>
+                <div class="ai-card" data-tags="image stable"><i class="fas fa-balance-scale"></i><a href="https://stability.ai/" target="_blank">Stable Diffusion</a><p class="description">Open-source imaging.</p></div>
+                <div class="ai-card" data-tags="image leonardo"><i class="fas fa-paint-brush"></i><a href="https://leonardo.ai/" target="_blank">Leonardo AI</a><p class="description">Custom fine-tuned.</p></div>
+                <div class="ai-card" data-tags="image firefly"><i class="fas fa-fire"></i><a href="https://firefly.adobe.com/" target="_blank">Adobe Firefly</a><p class="description">Ethical Adobe AI.</p></div>
+                <div class="ai-card" data-tags="image imagen"><i class="fas fa-google"></i><a href="https://gemini.google.com/" target="_blank">Google Imagen</a><p class="description">High-fidelity images.</p></div>
+                <div class="ai-card" data-tags="image grok"><i class="fas fa-rocket"></i><a href="https://grok.x.ai/" target="_blank">Grok Image Gen</a><p class="description">Uncensored creation.</p></div>
+                <div class="ai-card" data-tags="image ideogram"><i class="fas fa-font"></i><a href="https://ideogram.ai/" target="_blank">Ideogram</a><p class="description">Text-focused gen.</p></div>
+                <div class="ai-card" data-tags="image flux"><i class="fas fa-leaf"></i><a href="https://blackforestlabs.ai/" target="_blank">Flux AI</a><p class="description">Realistic open model.</p></div>
+                <div class="ai-card" data-tags="image shutterstock"><i class="fas fa-camera-retro"></i><a href="https://www.shutterstock.com/ai-image-generator" target="_blank">Shutterstock AI</a><p class="description">Stock image AI.</p></div>
+            </div>
+        </div>
+        
+        <div class="section video-section">
+            <div class="section-header">
+                <h2><i class="fas fa-video"></i> Image-to-Video AI Tools</h2>
+                <p>Convert images to videos with these leading platforms.</p>
+            </div>
+            <div class="ai-grid" id="videoGrid">
+                <!-- Video Cards -->
+                <div class="ai-card" data-tags="video runway"><i class="fas fa-film"></i><a href="https://runwayml.com/" target="_blank">Runway ML</a><p class="description">AI video from images/text.</p></div>
+                <div class="ai-card" data-tags="video pika"><i class="fas fa-palette"></i><a href="https://pika.art/" target="_blank">Pika Labs</a><p class="description">Cinematic AI videos.</p></div>
+                <div class="ai-card" data-tags="video kling"><i class="fas fa-play-circle"></i><a href="https://klingai.com/" target="_blank">Kling AI</a><p class="description">High-quality video gen.</p></div>
+                <div class="ai-card" data-tags="video luma"><i class="fas fa-dream"></i><a href="https://lumalabs.ai/dream-machine" target="_blank">Luma AI</a><p class="description">Dream-like synthesis.</p></div>
+                <div class="ai-card" data-tags="video sora"><i class="fas fa-magic"></i><a href="https://openai.com/sora" target="_blank">OpenAI Sora</a><p class="description">Next-gen video AI.</p></div>
+                <div class="ai-card" data-tags="video veo"><i class="fas fa-eye"></i><a href="https://deepmind.google/technologies/veo/" target="_blank">Google Veo</a><p class="description">Advanced video model.</p></div>
+                <div class="ai-card" data-tags="video vidnoz"><i class="fas fa-camera"></i><a href="https://www.vidnoz.com/ai-video-generator.html" target="_blank">Vidnoz AI</a><p class="description">Easy image-to-video.</p></div>
+                <div class="ai-card" data-tags="video akool"><i class="fas fa-user"></i><a href="https://akool.com/apps/image-to-video" target="_blank">Akool</a><p class="description">AI avatars & video.</p></div>
+                <div class="ai-card" data-tags="video domo"><i class="fas fa-home"></i><a href="https://domoai.app/" target="_blank">DomoAI</a><p class="description">Stylized photo videos.</p></div>
+                <div class="ai-card" data-tags="video kaiber"><i class="fas fa-music"></i><a href="https://kaiber.ai/" target="_blank">Kaiber AI</a><p class="description">Music-reactive anims.</p></div>
+                <div class="ai-card" data-tags="video genmo"><i class="fas fa-sparkles"></i><a href="https://www.genmo.ai/" target="_blank">Genmo AI</a><p class="description">Creative video tools.</p></div>
+                <div class="ai-card" data-tags="video haiper"><i class="fas fa-bolt"></i><a href="https://haiper.ai/" target="_blank">Haiper AI</a><p class="description">Fast image-to-video.</p></div>
+                <div class="ai-card" data-tags="video synthesia"><i class="fas fa-robot"></i><a href="https://www.synthesia.io/" target="_blank">Synthesia</a><p class="description">AI video avatars.</p></div>
+                <div class="ai-card" data-tags="video invideo"><i class="fas fa-edit"></i><a href="https://invideo.io/" target="_blank">InVideo AI</a><p class="description">Text/image to video.</p></div>
+                <div class="ai-card" data-tags="video viggle"><i class="fas fa-dance"></i><a href="https://viggle.ai/" target="_blank">Viggle AI</a><p class="description">Animate static images.</p></div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+       <p>&copy; 2025 NeoToolBoxAI. Efficiently curated for professionals. Updated November 2025.</p>
+    </footer>
+
+    <!-- Linked JS -->
+    <script src="js/main.js" defer></script>
+
+    <!-- 4. MONETAG AD SCRIPT (Keep this in HTML for Ads to work properly) -->
+    <script src="https://alwingulla.com/88/tag.min.js" data-zone="YOUR_ZONE_ID" async data-cfasync="false"></script>
 </body>
-</html>
+  </html>
